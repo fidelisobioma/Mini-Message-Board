@@ -4,7 +4,7 @@
   "description": "Mini Message Board",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node db/populatedb.js && node app.js",
     "init-db": "node db/populatedb.js"
   },
   "keywords": [],
