@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Message Board</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <h2>Mini Message Board</h2>
+        <hr />
+      </div>
+      <div class="post">
+        <p>Do you think AI is replacing developers?</p>
+        <button class="comment_btn"><a href="/new">comment</a></button>
+      </div>
+      <div>
+        <% if(locals.comments){%>
+        <div>
+          <%comments.map((comment)=>{%>
+          <p class="user"><%=comment.name%>%></p>
+          <p class="text"><%=comment.messages%>%></p>
+          <a class="view" href="/details/<%=comment.id%>">view</a>
+          <hr />
+          <%})%>
+        </div>
+        <%}%>
+      </div>
+    </div>
+  </body>
+</html>

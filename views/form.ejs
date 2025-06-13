@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>comment form Mini Message Board</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="from_container">
+      <form method="POST" action="/new">
+        <div>
+          <label for="user">Name:</label>
+          <br />
+          <input name="user" id="user" required />
+        </div>
+        <br />
+        <div>
+          <label for="message">Text:</label>
+          <br />
+          <textarea name="message" id="message" required></textarea>
+        </div>
+        <br />
+        <div class="btn">
+          <input type="submit" value="Submit" />
+          <a class="Cancel" href="/">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

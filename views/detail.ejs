@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>user detail Mini Message Board</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="detail_container">
+      <h1><%=title%></h1>
+      <div>
+        <div class="detail">
+          <%if(locals.details){%> <%details.map((detail)=>{%>
+          <p><span>Name:</span> <%=detail.name%></p>
+          <p><span>Message:</span> <%=detail.messages%></p>
+          <p><span>Date:</span> <%=detail.addeddate%></p>
+          <%})%> <%}%>
+        </div>
+        <div class="back"><a href="/">Back to post</a></div>
+      </div>
+    </div>
+  </body>
+</html>
