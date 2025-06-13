@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "init": "node db/populatedb.js"
+    "init-db": "node db/populatedb.js"
   },
   "keywords": [],
   "author": "",
